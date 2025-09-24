@@ -112,15 +112,16 @@ section.about .about-image img {
 
 .cards {
   display: flex;
-  justify-content: space-around;
+  justify-content:space-evenly;
   flex-wrap: wrap;
+  flex-diirection: row;
 }
 .cards .card {
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 30px;
-  width: 300px;
+  width: 200px;
   margin: 20px;
   text-align: center;
   transition: transform 0.3s;
