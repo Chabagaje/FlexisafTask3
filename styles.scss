@@ -1,16 +1,21 @@
+@use 'module' ;
+
 // Variables
+
+
 $primary-color: #0B3142;
 $secondary-color: #F7D36C;
 $text-color: #232323;
-$background-color: #f5f7fa;
 $font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+
 
 body {
   margin: 0;
   font-family: $font-family;
-  color: $text-color;
+  color: module.$tartialy-color;
   line-height: 1.6;
-  background-color: $background-color;
+  background-color: module.$background-color;
 }
 .nametag{
   display: flex;
@@ -134,7 +139,7 @@ section {
 // Services Cards
 .cards {
   display: flex;
-  justify-content: space-evenly;
+  justify-content:space-evenly; 
   flex-wrap: wrap;
   flex-direction: row;
 
@@ -143,7 +148,7 @@ section {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border-radius: 10px;
     padding: 30px;
-    width: 250px;
+    width: 200px;
     margin: 20px;
     text-align: center;
     transition: transform 0.3s;
@@ -210,9 +215,9 @@ section {
   }
 }
 
-// Footer
+// Footer 
 .footer {
-  background-color: #fff;
+  background-color: module.$footer-color;
   padding: 20px 0;
   text-align: center;
   box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
@@ -360,6 +365,4 @@ section {
     padding: 15px 10px;
     font-size: 0.9em;
   }
-
 }
-
